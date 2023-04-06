@@ -1,8 +1,32 @@
 import { createApp } from 'vue';
+
+import { OhVueIcon, addIcons } from 'oh-vue-icons';
+import {
+  CoFacebookF,
+  CoInstagram,
+  CoLinkedinIn,
+  MdEmailOutlined,
+  CoPinterestP,
+  CoTwitter,
+  CoYoutube,
+} from 'oh-vue-icons/icons';
+
 import App from './App.vue';
 import router from './router';
 import store from './store';
 
 import './assets/tailwind.css';
 
-createApp(App).use(store).use(router).mount('#app');
+addIcons(
+  CoFacebookF,
+  CoInstagram,
+  CoLinkedinIn,
+  MdEmailOutlined,
+  CoPinterestP,
+  CoTwitter,
+  CoYoutube,
+);
+
+createApp(App).component('v-icon', OhVueIcon)
+  .use(store).use(router)
+  .mount('#app');
