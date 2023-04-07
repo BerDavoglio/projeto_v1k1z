@@ -13,6 +13,11 @@ import MenuHeader from './MenuHeader.vue';
 
 export default {
   name: 'HeaderComponent',
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
   components: {
     LinksHeader,
     LogoHeader,
