@@ -9,6 +9,9 @@ import {
   CoPinterestP,
   CoTwitter,
   CoYoutube,
+  CoMenu,
+  BiChevronCompactDown,
+  BiChevronCompactUp,
 } from 'oh-vue-icons/icons';
 
 import App from './App.vue';
@@ -25,6 +28,9 @@ addIcons(
   CoPinterestP,
   CoTwitter,
   CoYoutube,
+  CoMenu,
+  BiChevronCompactDown,
+  BiChevronCompactUp,
 );
 
 createApp(App).component('v-icon', OhVueIcon)
